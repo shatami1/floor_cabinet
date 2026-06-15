@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace YOUR-DOMAIN.com with the real website domain, then rename this file to sitemap.xml before deployment. -->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://YOUR-DOMAIN.com/index.html</loc>
-    <priority>1.0</priority>
-  </url>
-</urlset>

@@ -7,8 +7,9 @@ Static website project for Moon Lighting, Inc. focused on apartment floor coveri
 - `index.html` - Main landing page.
 - `styles.css` - Page styling.
 - `script.js` - Small interactive behavior.
-- `assets/apartment-upgrade-hero.png` - Generated hero image for the site.
-- `sitemap-template.xml` - Replace `YOUR-DOMAIN.com` with the live domain and rename to `sitemap.xml` before deployment.
+- `assets/apartment-upgrade-hero.jpg` - Optimized hero image for the site.
+- `CNAME` - GitHub Pages custom domain for `floor.accentps.com`.
+- `sitemap.xml` - Sitemap for `https://floor.accentps.com/`.
 - `assets/` - Place more project photos, logo files, and before/after images here.
 
 ## How To Open

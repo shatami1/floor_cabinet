@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartment Flooring &amp; Cabinet Upgrades in Norcross, GA | Moon Lighting, Inc.</title>
-    <meta name="description" content="Moon Lighting, Inc. provides apartment floor covering, cabinet upgrades, unit turns, and remodeling support for property managers and multifamily communities near Norcross and Atlanta.">
-    <meta name="keywords" content="apartment flooring Norcross GA, apartment cabinet upgrades, floor covering Norcross, apartment remodeling Atlanta, multifamily unit turns, property manager remodeling">
-    <meta property="og:title" content="Apartment Flooring &amp; Cabinet Upgrades | Moon Lighting, Inc.">
-    <meta property="og:description" content="Floor covering, cabinet upgrades, and apartment remodeling support for property managers and multifamily communities.">
+    <title>Online Cabinet Sales &amp; Apartment Upgrades in Norcross, GA | Moon Lighting, Inc.</title>
+    <meta name="description" content="Moon Lighting, Inc. offers online cabinet quote requests, cabinet finish selection, apartment floor covering, unit turns, and remodeling support near Norcross and Atlanta.">
+    <meta name="keywords" content="online cabinet sales Norcross GA, ATL Cabinetry Depot cabinet styles, apartment cabinet upgrades, floor covering Norcross, apartment remodeling Atlanta, multifamily unit turns">
+    <meta property="og:title" content="Online Cabinet Sales &amp; Apartment Upgrades | Moon Lighting, Inc.">
+    <meta property="og:description" content="Browse cabinet styles, add finish packages to a quote cart, and request apartment cabinet and flooring upgrades.">
     <meta property="og:type" content="website">
     <meta property="og:image" content="assets/apartment-upgrade-hero.jpg">
     <link rel="stylesheet" href="styles.css">
@@ -16,7 +16,7 @@
       "@context": "https://schema.org",
       "@type": "HomeAndConstructionBusiness",
       "name": "Moon Lighting, Inc.",
-      "description": "Floor covering, cabinet upgrades, and apartment remodeling support for property managers and multifamily communities.",
+      "description": "Online cabinet quote requests, floor covering, cabinet upgrades, and apartment remodeling support for property managers and multifamily communities.",
       "telephone": "+1-770-232-7220",
       "address": {
         "@type": "PostalAddress",
@@ -47,6 +47,7 @@
       },
       "makesOffer": [
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Apartment floor covering"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Cabinet style quote requests"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cabinet upgrades"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Apartment unit turns and remodeling"}}
       ]
@@ -64,6 +65,7 @@
                 <a href="#services">Services</a>
                 <a href="#apartments">Apartments</a>
                 <a href="#materials">Materials</a>
+                <a href="#cabinet-store">Cabinet Store</a>
                 <a href="#process">Process</a>
                 <a href="#contact">Contact</a>
             </nav>
@@ -76,10 +78,11 @@
             <div class="hero-shade"></div>
             <div class="container hero-content">
                 <p class="eyebrow">Norcross, Atlanta, and nearby multifamily communities</p>
-                <h1><span class="mobile-title-line">Apartment Flooring</span><span class="mobile-title-line">&amp; Cabinet Upgrades</span></h1>
-                <p>Floor covering, cabinet refreshes, and practical remodeling support for property managers who need clean units, reliable turns, and durable finishes.</p>
+                <h1><span class="mobile-title-line">Online Cabinet Sales</span><span class="mobile-title-line">&amp; Apartment Upgrades</span></h1>
+                <p>Browse cabinet styles, build a quote cart, and coordinate cabinet, flooring, and practical remodeling support for clean unit turns and durable finishes.</p>
                 <div class="hero-actions">
                     <a class="button primary" href="tel:770-232-7220">Call (770) 232-7220</a>
+                    <a class="button secondary" href="#cabinet-store">Shop Cabinets</a>
                     <a class="button secondary" href="#contact">Request Property Estimate</a>
                 </div>
             </div>
@@ -93,7 +96,7 @@
                 </div>
                 <div>
                     <span>Specialty</span>
-                    <strong>Floor Covering</strong>
+                    <strong>Floor Covering + Cabinet Sales</strong>
                 </div>
                 <div>
                     <span>Location</span>
@@ -190,6 +193,68 @@
                         <h3>Carpet Replacement</h3>
                         <p>Bedroom and unit carpet replacement planning for standard turns and budget-controlled updates.</p>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section cabinet-store" id="cabinet-store">
+            <div class="container">
+                <div class="store-head">
+                    <div>
+                        <p class="eyebrow">Online cabinet ordering</p>
+                        <h2>Cabinet styles for kitchens, vanities, and apartment turns.</h2>
+                        <p>Choose a cabinet finish, add it to your quote cart, and send the request to Moon Lighting for confirmation, measurement, and final pricing.</p>
+                    </div>
+                    <aside class="supplier-card" aria-label="Cabinet supplier reference">
+                        <span>Cabinetry source reference</span>
+                        <strong>ATL Cabinetry Depot</strong>
+                        <p>3033 Adriatic Ct., Suite B<br>Peachtree Corners, GA 30071</p>
+                        <p>Phone: <a href="tel:770-685-1471">770-685-1471</a><br>Toll free: <a href="tel:888-470-3351">888-470-3351</a></p>
+                        <p><a href="mailto:info@ATLCabinetry.com">info@ATLCabinetry.com</a><br><a href="https://www.ATLCabinetry.com">www.ATLCabinetry.com</a></p>
+                    </aside>
+                </div>
+
+                <div class="cabinet-layout">
+                    <div>
+                        <div class="store-toolbar" aria-label="Cabinet style filters">
+                            <button type="button" class="is-active" data-filter="all">All</button>
+                            <button type="button" data-filter="Milano Series">Milano</button>
+                            <button type="button" data-filter="3E Series">3E</button>
+                        </div>
+                        <div class="cabinet-grid" id="cabinetGrid" aria-live="polite"></div>
+                    </div>
+
+                    <aside class="quote-cart" aria-label="Cabinet quote cart">
+                        <div class="quote-cart-head">
+                            <div>
+                                <span>Quote cart</span>
+                                <strong id="cabinetCartCount">0 items</strong>
+                            </div>
+                            <button type="button" id="clearCabinetCart">Clear</button>
+                        </div>
+                        <div id="cabinetCartItems" class="quote-cart-items">
+                            <p class="cart-empty">No cabinet styles selected yet.</p>
+                        </div>
+                        <form class="cabinet-form" id="cabinetOrderForm">
+                            <label>
+                                Property or customer name
+                                <input type="text" name="customer" placeholder="Name or property">
+                            </label>
+                            <label>
+                                Phone
+                                <input type="tel" name="phone" placeholder="Best phone number">
+                            </label>
+                            <label>
+                                Delivery / project address
+                                <input type="text" name="address" placeholder="Project address">
+                            </label>
+                            <label>
+                                Notes
+                                <textarea name="notes" rows="4" placeholder="Kitchen, vanity, apartment unit count, measurements, timeline"></textarea>
+                            </label>
+                            <button class="button primary" type="submit">Email Cabinet Quote</button>
+                        </form>
+                    </aside>
                 </div>
             </div>
         </section>
